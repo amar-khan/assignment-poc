@@ -2,8 +2,13 @@
 ## FLASK-POC
 A simple Flask app running on Docker.
 
-### Considerations: Just because this is a poc project so avoided private subnets and used only public subnets.
-#### Tasks Completed: 
+### Considerations: 
+#### 1. Just because this is a poc project so avoided private subnets and used only public subnets.
+#### 2. terraform/keys/poc.tfvars has a sample variable value.
+#### 3. Created and Tested with Terraform v0.13.5.
+#### 4. Docker Images uploaded to public repository.
+
+### Tasks Completed: 
 
 #### Answer-1:
 Flask 'Hello World' app up and running on an ECR image (use a public docker image) using your known best practices as well as the instructions in the guidelines below
