@@ -29,7 +29,9 @@ Flask 'Hello World' app up and running on an ECR image (use a public docker imag
 - [x] The app/docker container should be automatically restarted if crashes or is killed
 - [x] The app's logs should be captured to /var/log/app.log
 - [x] Timezone should be in UTC
-
+##### Apply Solution:
+        >          cd terraform/poc ; terraform apply --var-file=../keys/poc.tfvars
+        >          cd terraform/poc/app ; terraform apply --var-file=../../keys/poc.tfvars
 ##### screenshots:
 <p float="left"><a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/screenshot1.png"  height="450" /> </a>
 <p float="left"><a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/image_2021_01_14T21_16_03_053Z.png"  height="250" /> </a>
