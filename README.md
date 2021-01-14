@@ -1,6 +1,8 @@
 ![N|Solid](https://i.ibb.co/QcVg3gb/circle-cropped.png)
 ## FLASK-POC
 A simple Flask app running on Docker.
+
+### Considerations: Just because this is a poc project so avoided private subnets and used only public subnets.
 #### Tasks To Done: 
 
 1. Get the Flask 'Hello World' app up and running on an ECR image (use a public docker image)
