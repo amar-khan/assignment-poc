@@ -58,4 +58,4 @@ infrastructure as code specification that deploys a ​"Hello world" lambda func
 1. created a lambda.tf (root/terraform/poc/lambda) to provison hello word python based serverless function.
 2. created a apigateway for this lambda to expose over https
 ##### screenshots:
-<p float="left"><a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/image_2021_01_14T14_47_17_084Z.png"  height="450" /> </a></p>
+<p float="left"><a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/image_2021_01_14T14_47_17_084Z.png"  height="250" /> </a></p>
