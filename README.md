@@ -49,7 +49,7 @@ Achievements:
 - [x] Timezone should be in UTC
 
 ##### screenshots:
-<p float="left"><a> <img src="https://github.com/amar-khan/flask-poc/blob/main/screenshots/screenshot1.png"  height="450" /> </a></p>
+<p float="left"><a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/screenshot1.png"  height="450" /> </a></p>
 
 #### Answer-2:
 #### steps: 
