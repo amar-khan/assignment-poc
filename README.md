@@ -4,9 +4,9 @@ A simple Flask app running on Docker.
 
 ### Considerations: 
 > #### 1. Just because this is a poc project so avoided private subnets and used only public subnets.
-#### 2. terraform/keys/poc.tfvars has a sample variable value.
-#### 3. Created and Tested with Terraform v0.13.5.
-#### 4. Docker Images uploaded to public repository.
+> #### 2. terraform/keys/poc.tfvars has a sample variable value.
+> #### 3. Created and Tested with Terraform v0.13.5.
+> #### 4. Docker Images uploaded to public repository.
 
 ### Tasks Completed: 
 
