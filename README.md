@@ -3,34 +3,10 @@
 A simple Flask app running on Docker.
 
 ### Considerations: Just because this is a poc project so avoided private subnets and used only public subnets.
-#### Tasks To Done: 
-
-1. Get the Flask 'Hello World' app up and running on an ECR image (use a public docker image)
-using your known best practices as well as the instructions in the guidelines below.
-You must use a Infrastructure as Code tool (preferably Terraform) as your provisioner to
-install and configure everything.
-When you're done, we should be able to run `terraform apply` and your app should be
-reachable via a URL of your choice over HTTPS
-Guidelines:
-● The app should be reachable only via HTTPS and/or automatic redirect to HTTPS
-● The app should route through nginx and/or uWSGI (or node, if preferred)
-● The app should be running as a non-privileged user
-● The app/docker container should be automatically restarted if crashes or is killed
-● The app's logs should be captured to /var/log/app.log
-● Timezone should be in UTC
->> We'll evaluate the submission on simplicity, code quality, sustainable development practices
-(documentation, of best practices ). Feel free to be creative and take liberties where you feel it
-will improve the deliverable!
-2. Write a infrastructure as code specification that deploys a "Hello world" lambda function
-(using the language of your choice) or with SAM or serverless
-3. Modify your code to provision a SNS topic with terraform
-4. Extend the above lambda function to (optional, nice to have):
-Query https://www.blockchain.com/en/api (https://api.blockchain.com/v3/) to fetch the
-latest blocks and send a notification to an SNS topic for each new block.
-
-Achievements:
+#### Tasks Completed: 
 
 #### Answer-1:
+Flask 'Hello World' app up and running on an ECR image (use a public docker image) using your known best practices as well as the instructions in the guidelines below
 #### steps: 
 1. aws ecr get-login-password --region us-east-2 | sudo docker login --username AWS --password-stdin 874576354677.dkr.ecr.us-east-2.amazonaws.com
 2. docker tag flask-poc_bitwalapp:latest 874576354677.dkr.ecr.us-east-2.amazonaws.com/flask:v1.0
