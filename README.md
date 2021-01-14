@@ -44,6 +44,9 @@ infrastructure as code specification that deploys a ​"Hello world" lambda func
 1. created a lambda.tf (root/terraform/poc/lambda) to provison hello word python based serverless function.
 2. created a apigateway for this lambda to expose over https printed endpoint in console
     > hello_world_invoke_url = https://w7zizb77o0.execute-api.us-east-2.amazonaws.com/poc
+##### Apply Solution:
+        >          cd terraform/poc ; terraform apply --var-file=../keys/poc.tfvars
+        >          cd terraform/poc/lambda ; terraform apply --var-file=../../keys/poc.tfvars    
 ##### screenshots:
 <p float="left"><a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/image_2021_01_14T14_47_17_084Z.png"  height="250" /> </a></p>
 
@@ -55,6 +58,9 @@ infrastructure as code specification to create sns
 2. created a apigateway for this lambda to expose over https and printed endpoint in console.
     > blockchain_latest_block_invoke_url = https://w7zizb77o0.execute-api.us-east-2.amazonaws.com/poc
 3. created sns(root/terraform/poc/lambda/sns.tf) topic with terraform and subscribe to an email string .
+##### Apply Solution:
+        >          cd terraform/poc ; terraform apply --var-file=../keys/poc.tfvars
+        >          cd terraform/poc/lambda ; terraform apply --var-file=../../keys/poc.tfvars 
 ##### screenshots:
 <p float="left">
 <a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/image_2021_01_14T17_24_34_220Z.png"  height="250" /> </a>
@@ -68,6 +74,10 @@ infrastructure as code specification to create sns
 Extend the above lambda function to (optional, nice to have) Query https://blockchain.info/latestblock to fetch the latest blocks and send a notification to an SNS topic.
 #### steps: 
 1. apigateway ➡️ calling  ➡️ Lambda ➡️ Querying over https(https://blockchain.info/latestblock)  ➡️  SNS Topic ➡️  Subscription(Email)
+
+##### Apply Solution:
+        >          cd terraform/poc ; terraform apply --var-file=../keys/poc.tfvars
+        >          cd terraform/poc/lambda ; terraform apply --var-file=../../keys/poc.tfvars 
 
 ##### screenshots:
 <p float="left">
