@@ -70,4 +70,8 @@ infrastructure as code specification that deploys a ​"Hello world" lambda func
     > blockchain_latest_block_invoke_url = https://w7zizb77o0.execute-api.us-east-2.amazonaws.com/poc
 3. created sns(root/terraform/poc/lambda/sns.tf) topic with terraform and subscribe to an email string .
 ##### screenshots:
-<p float="left"><a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/image_2021_01_14T17_24_34_220Z.png"  height="250" /> </a></p>
+<p float="left">
+<a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/image_2021_01_14T17_24_34_220Z.png"  height="250" /> </a>
+> subscribe to email
+<a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/image_2021_01_14T17_26_00_268Z.png"  height="250" /> </a>
+</p>
