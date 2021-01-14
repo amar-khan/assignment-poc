@@ -38,8 +38,8 @@ Achievements:
 5. sudo docker push 874576354677.dkr.ecr.us-east-2.amazonaws.com/flask:v1.0
 6. nginx and flask folder having all code and docker configuration
 7. terraform folder in root folder is splited into two part
-    >> poc which has all infrastructure terraform files.
-    >> poc/app which has deployment related .tf files example task defination, ecs services
+    > poc which has all infrastructure terraform files.
+    > poc/app which has deployment related .tf files example task defination, ecs services
 8. SubTasks Completed.
 - [x] The app should be reachable only via HTTPS and/or automatic redirect to HTTPS
 - [x] The app should route through nginx and/or uWSGI (or node, if preferred)
