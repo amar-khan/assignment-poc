@@ -74,4 +74,6 @@ infrastructure as code specification that deploys a ​"Hello world" lambda func
 <a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/image_2021_01_14T17_24_34_220Z.png"  height="250" /> </a>
 > subscribe to email
 <a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/image_2021_01_14T17_26_00_268Z.png"  height="250" /> </a>
+> waw you subscribed to email
+<a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/image_2021_01_14T17_26_14_402Z.png"  height="250" /> </a>
 </p>
