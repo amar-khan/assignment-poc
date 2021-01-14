@@ -1,0 +1,34 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: noc lambda function for serverless hello world in poc
+Resources:
+  nocpochelloserverless:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.6
+      CodeUri: .
+      Description: noc lambda function for serverless hello world in poc
+      MemorySize: 128
+      Timeout: 15
+      Role: 'arn:aws:iam::xxxxxxxxxxxxxx:role/mycomp-poc-lambda' # Replace Role arn
+      Events:
+        Api1:
+          Type: Api
+          Properties:
+            Path: /MyResource
+            Method: ANY
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0b2110ad227e19962
+        SubnetIds:
+          - subnet-0828c8354d7da21b7
+          - subnet-0ecc9d47498154ad1
+      Environment:
+        Variables:
+          key_one: value_one
+      Tags:
+        environment: poc
+        service: noc
+        created-by: amar
+        Name: bitwala-poc-hello-world

@@ -1,0 +1,42 @@
+version: '2.1'
+services:
+  bitwalapp: 
+    build:
+        context: ./flask/
+        dockerfile: Dockerfile
+        args:
+          service_name: bitwala-app
+    container_name: flask-app
+    environment:
+      - FLASK_ENV="testing"
+    ports:
+      - 5000:5000
+    restart: on-failure 
+    # network_mode: "host"           
+    healthcheck:
+      test: ["CMD", "wget", "http://localhost:5000/actuator/health" , "-q -O - > /dev/null 2>&1" ]
+      interval: 5s
+      timeout: 5s
+      retries: 2
+    mem_limit: 256m 
+  nginx:
+    image: nginx:stable-alpine
+    container_name: nginx-app
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/ssl/localhost.crt:/etc/nginx/certs/localhost.crt
+      - ./nginx/ssl/localhost.key:/etc/nginx/certs/localhost.key
+    ports:
+      - 80:80
+      - 443:443
+    # depends_on:
+    #   bitwalapp:
+    #       condition: service_healthy
+    restart: on-failure  
+    # network_mode: "host" 
+    healthcheck:
+        test: ["CMD", "curl", "-f", "http://localhost/healthcheck/"]
+        interval: 20s
+        timeout: 10s
+        retries: 10  
+    mem_limit: 256m    

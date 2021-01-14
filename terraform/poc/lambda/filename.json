@@ -1,0 +1,18 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "bitwala apigateway for hello world in poc",
+    "version" : "2021-01-14T07:43:01Z",
+    "title" : "bitwala-poc-hello_world"
+  },
+  "host" : "2c8y3znjjh.execute-api.us-east-2.amazonaws.com",
+  "basePath" : "/poc",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/" : {
+      "get" : {
+        "responses" : { }
+      }
+    }
+  }
+}
