@@ -53,8 +53,9 @@ Achievements:
 
 #### Answer-2:
 #### steps: 
-1. aws ecr get-login-password --region us-east-2 | sudo docker login --username AWS --password-stdin 874576354677.dkr.ecr.us-east-2.amazonaws.com
-2. docker tag flask-poc_bitwalapp:latest 874576354677.dkr.ecr.us-east-2.amazonaws.com/flask:v1.0
-3. docker tag nginx-poc_bitwalapp:latest 874576354677.dkr.ecr.us-east-2.amazonaws.com/nginx:v1.0
-4. sudo docker push 874576354677.dkr.ecr.us-east-2.amazonaws.com/nginx:v1.0
-5. sudo docker push 874576354677.dkr.ecr.us-east-2.amazonaws.com/flask:v1.0
+infrastructure as code specification that deploys a ​"Hello world" lambda function
+(using the language of your choice) or with SAM or serverless
+1. created a lambda.tf (root/terraform/poc/lambda) to provison hello word python based serverless function.
+2. created a apigateway for this lambda to expose over https
+##### screenshots:
+<p float="left"><a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/image_2021_01_14T14_47_17_084Z.png"  height="450" /> </a></p>
