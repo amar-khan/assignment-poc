@@ -24,7 +24,7 @@ resource "aws_ecs_task_definition" "ecs_flask_td" {
 [
   {
     "name": "flask",
-    "image": "279865790913.dkr.ecr.us-east-2.amazonaws.com/flask:v1.0",
+    "image": "bitwala/flask:v1.0",
     "cpu": 0,
     "memory": 256,
     "networkMode": "host",
@@ -46,7 +46,7 @@ resource "aws_ecs_task_definition" "ecs_flask_td" {
   },
    {
     "name": "nginx",
-    "image": "279865790913.dkr.ecr.us-east-2.amazonaws.com/nginx:v1.0",
+    "image": "bitwala/nginx:v1.0",
     "cpu": 0,
     "memory": 256,
     "networkMode": "host",

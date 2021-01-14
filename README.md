@@ -31,7 +31,9 @@ Flask 'Hello World' app up and running on an ECR image (use a public docker imag
 - [x] Timezone should be in UTC
 
 ##### screenshots:
-<p float="left"><a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/screenshot1.png"  height="450" /> </a></p>
+<p float="left"><a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/screenshot1.png"  height="450" /> </a>
+<p float="left"><a> <img src="https://github.com/amar-khan/assignment-poc/blob/main/screenshots/image_2021_01_14T21_16_03_053Z.png"  height="450" /> </a>
+</p>
 
 #### Answer-2:
 #### steps: 
